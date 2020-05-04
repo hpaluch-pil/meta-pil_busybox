@@ -33,7 +33,7 @@ bitbake-layers add-layer ../meta-pil_busybox'
 Now rebuild image and rerun qemu:
 
 ```bash
-bitbake bitbake -c cleanall busybox
+bitbake -c cleanall busybox
 bitbake core-image-minimal
 runqemu qemux86-64 core-image-minimal nographic
 ```
